@@ -13,9 +13,6 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # Osu 
-    nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
