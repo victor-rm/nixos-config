@@ -1,0 +1,11 @@
+# Ignore builds from nix
+result
+result-*
+
+# Ignore backup from editors
+*~
+*.swp
+
+# Ignore Direnv
+.direnv
+.envrc
