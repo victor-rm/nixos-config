@@ -61,6 +61,9 @@
       inter
       nerd-fonts.jetbrains-mono 
       nerd-fonts.fira-code
+      maple-mono.truetype
+      maple-mono.NF-unhinted
+      maple-mono.NF-CN-unhinted
     ];
 
     # Define: System-wide Fonts
@@ -68,7 +71,7 @@
       defaultFonts = {
         serif = [ "Noto Serif" "Liberation Serif" ];
         sansSerif = [ "Noto Sans" "Inter" ];
-        monospace = [ "JetBrainsMono Nerd Font" ]; 
+        monospace = [ "Maple Mono NF" "JetBrainsMono Nerd Font" ]; 
         emoji = [ "Noto Color Emoji" ];
       };
     };

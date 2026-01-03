@@ -5,7 +5,7 @@
     enable = true;
     themeFile = "Catppuccin-Mocha";
     font = {
-      name = "Fira Code";
+      name = "Maple Mono NF";
     };
     settings = {
       background_opacity = "0.91";
