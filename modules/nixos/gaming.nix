@@ -14,6 +14,7 @@
     osu-lazer-bin
     prismlauncher
     waydroid-helper
+    r2modman
   ];
 
   programs.steam.enable = true;

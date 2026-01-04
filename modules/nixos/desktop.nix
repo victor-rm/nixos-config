@@ -43,6 +43,7 @@
     kdePackages.kcalc
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     super-productivity
+    vlc
   ];
   
   programs.firefox.enable = true;
