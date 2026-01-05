@@ -44,6 +44,7 @@
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     super-productivity
     vlc
+    onlyoffice-desktopeditors
   ];
   
   programs.firefox.enable = true;

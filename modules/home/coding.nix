@@ -32,6 +32,7 @@
   home.packages = with pkgs; [
     vscodium
     nodejs_20
+    python314
   ];
   
   home.sessionVariables = {
