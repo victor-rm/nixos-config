@@ -56,7 +56,7 @@
 
   # Essential system packages (root) 
   environment.systemPackages = with pkgs; [
-    vim wget git htop
+    vim wget git htop usbutils
   ];
   environment.variables.EDITOR = "vim";
 }
