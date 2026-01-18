@@ -13,15 +13,6 @@
   environment.systemPackages = with pkgs; [
     osu-lazer-bin
     prismlauncher
-    waydroid-helper
-    r2modman
   ];
 
-  programs.steam.enable = true;
-
-  # Waydroid
-  virtualisation.waydroid = {
-    enable = true;
-    package = pkgs.waydroid-nftables;
-  };
 }

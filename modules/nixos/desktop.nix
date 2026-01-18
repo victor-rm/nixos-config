@@ -18,6 +18,16 @@
   services.desktopManager.plasma6.enable = true;
   console.useXkbConfig = true;
 
+  services.flatpak.enable = true;
+
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
   # Audio
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -45,6 +55,7 @@
     super-productivity
     vlc
     onlyoffice-desktopeditors
+    qbittorrent
   ];
   
   programs.firefox.enable = true;
