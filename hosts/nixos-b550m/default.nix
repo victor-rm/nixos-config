@@ -31,12 +31,6 @@
     "video=HDMI-A-1:e"
   ];
 
-  fileSystems."/mnt/ssd-240gb" = { 
-    device = "/dev/disk/by-uuid/f2e0ccd5-50bc-4422-a43c-cc08707ce931";
-    fsType = "ext4"; 
-    options = [ "defaults" "nofail" ]; 
-  };
-
   fileSystems."/mnt/hdd" = { 
     device = "/dev/disk/by-uuid/E20275C302759CEB";
     fsType = "ntfs";

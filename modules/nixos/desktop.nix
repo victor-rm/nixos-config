@@ -56,6 +56,7 @@
     vlc
     onlyoffice-desktopeditors
     qbittorrent
+    zoom-us
   ];
   
   programs.firefox.enable = true;

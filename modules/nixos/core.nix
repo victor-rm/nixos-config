@@ -5,6 +5,7 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     kernel.sysctl."net.ipv4.ip_forward" = 1;
+    kernelModules = [ "ntsync" ];
     loader = {
       systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
@@ -15,6 +16,11 @@
         useOSProber = true;
         configurationLimit = 7;
         extraEntries = ''
+          menuentry "EndeavourOS (SSD 240gb)" {
+          search --set=root --fs-uuid 0D33-7BA0
+
+          chainloader /EFI/endeavouros/grubx64.efi
+          }
           menuentry "BIOS / UEFI Firmware Settings" {
             fwsetup
           }
