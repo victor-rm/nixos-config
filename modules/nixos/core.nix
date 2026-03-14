@@ -16,10 +16,10 @@
         useOSProber = true;
         configurationLimit = 7;
         extraEntries = ''
-          menuentry "EndeavourOS (SSD 240gb)" {
-          search --set=root --fs-uuid 0D33-7BA0
-
-          chainloader /EFI/endeavouros/grubx64.efi
+          menuentry "Kubuntu (SSD 240gb)" {
+            search --set=root --fs-uuid FF02-6C54
+            
+            chainloader /EFI/ubuntu/grubx64.efi
           }
           menuentry "BIOS / UEFI Firmware Settings" {
             fwsetup
@@ -28,7 +28,6 @@
       };
     };
   };
-
   # Network and Locale
   networking.hostName = "nixos-b550m";
   networking.networkmanager.enable = true;

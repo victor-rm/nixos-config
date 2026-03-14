@@ -47,19 +47,24 @@
     obsidian
     youtube-music
     zapzap
-    telegram-desktop
     spotify
     calibre
     kdePackages.kcalc
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    super-productivity
+    inputs.helium.packages.${system}.default
+    super-productivitxy
     vlc
     onlyoffice-desktopeditors
     qbittorrent
     zoom-us
+    anki-bin
+    readest
+    impression
+    anytype
   ];
   
   programs.firefox.enable = true;
+  programs.obs-studio.enable = true;
 
   services.printing.enable = true;
 
