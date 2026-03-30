@@ -52,12 +52,12 @@
     kdePackages.kcalc
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.helium.packages.${system}.default
-    super-productivitxy
     vlc
     onlyoffice-desktopeditors
     qbittorrent
     zoom-us
     anki-bin
+    telegram-desktop
     readest
     impression
     anytype
