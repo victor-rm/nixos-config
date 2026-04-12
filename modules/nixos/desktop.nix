@@ -18,6 +18,9 @@
   services.desktopManager.plasma6.enable = true;
   console.useXkbConfig = true;
 
+  hardware.graphics.enable32Bit = true;
+  programs.xwayland.enable = true;
+
   services.flatpak.enable = true;
 
   systemd.services.flatpak-repo = {
@@ -60,7 +63,8 @@
     telegram-desktop
     readest
     impression
-    anytype
+    slack
+    easyeffects
   ];
   
   programs.firefox.enable = true;

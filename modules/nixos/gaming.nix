@@ -8,6 +8,7 @@
   };
   hardware.enableAllFirmware = true;
   boot.initrd.kernelModules = ["amdgpu"];
+  programs.gamemode.enable = true;
 
   # Games
   environment.systemPackages = with pkgs; [
